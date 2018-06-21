@@ -1,7 +1,6 @@
 package cn.chinaunicom.audit_spring.service;
 
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Service;
 
 //@Service
 public class ScheduleService {

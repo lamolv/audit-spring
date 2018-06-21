@@ -3,6 +3,7 @@ package cn.chinaunicom.audit_spring;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import cn.chinaunicom.audit_spring.service.AsyncService;
+import cn.chinaunicom.audit_spring.service.ListService;
 import cn.chinaunicom.spring.config.SpringConfig;
 
 /**
@@ -14,6 +15,10 @@ public class App {
 		
 		AnnotationConfigApplicationContext context = 
 				new AnnotationConfigApplicationContext(SpringConfig.class);
+		
+		ListService service = context.getBean(ListService.class);
+		
+		System.out.println(service.showListCmd());
 		
 //		AsyncService service = context.getBean(AsyncService.class);
 		
